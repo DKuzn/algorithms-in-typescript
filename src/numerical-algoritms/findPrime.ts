@@ -1,5 +1,5 @@
 function isPrime(p: number, maxTest: number): boolean {
-    for (let test = 1; test < maxTest; test++) {
+    for (let test = 1; test <= maxTest; test++) {
         let n = 1 + Math.floor(Math.random() * (p - 1));
         if (Math.pow(n, p - 1) % p != 1) {
             return false;

@@ -1,7 +1,7 @@
 function findPrimes(maxNumber: number): number[] {
     let isComposite: boolean[] = new Array(maxNumber + 1);
 
-    for (let i = 4; i < maxNumber; i += 2) {
+    for (let i = 4; i <= maxNumber; i += 2) {
         isComposite[i] = true;
     }
 
@@ -20,7 +20,7 @@ function findPrimes(maxNumber: number): number[] {
     }
 
     let primes: number[] = [];
-    for (let i = 2; i < maxNumber; i++) {
+    for (let i = 2; i <= maxNumber; i++) {
         if (!isComposite[i]) {
             primes.push(i);
         }
